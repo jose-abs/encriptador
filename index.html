@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Encriptador de Texto</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+      <h1>Encriptador de Texto</h1>
+</header>
+<main>
+
+		<div class="contenedor">
+
+			<div class="uno">
+				
+				<div class="uno-a">
+					<textarea id="valor-texto" class="grid-item" cols="30" rows="10" placeholder="Ingresa el texto:"></textarea><!--1-->
+				</div>
+				
+				<div class="uno-b">
+					<input id="btn-encriptar" class="grid-item" type="button" onclick="encriptar()" value="Encriptar"><!--2-->
+				</div>
+				
+			</div>
+
+			<div class="dos">
+			
+				<div class="dos-a">
+					<label class="tag-dos"></label>
+					<textarea id="valor-resultado" class="grid-item" cols="30" rows="10" placeholder="Encriptado:" readonly></textarea><!--3-->
+				</div>
+
+				<div class="dos-b">
+					<input id="btn-desencriptar" type="button" class="grid-item" onclick="desencriptar()" value="Desencriptar"><!--4-->
+					<input id="btn-cancelar" type="button" class="grid-item" onclick="cancelar()" value="Cancelar">
+				</div>
+
+			</div>
+			
+			<div class="tres">
+			
+				<div class="tres-a">
+					<label class="tag-tres"></label>
+					<img src="./img/default.png" alt="imagen default" id="imagen" class="grid-item"/><!--5-->
+				</div>
+
+				<div class="tres-b">
+					<h2 id="sin-resultado" class="grid-item"></h2><!--6-->
+					<h3 id="texto-final" class="grid-item"></h3>
+				</div>
+
+			</div>
+
+		</div>
+
+</main>
+	<script src="script.js"></script>
+</body>
+
+<footer>
+	<p> &copy;  Realizado por Jose Bellorin - 2024 </p>
+</footer>
+</html>
+
